@@ -58,7 +58,7 @@ function gen_url_qr() {
     green "1、粘贴URL添加节点"
     echo ""
 
-    red "$*"
+    yellow "$*"
 
     green "2、扫描二维码添加节点"
     echo ""
@@ -170,7 +170,7 @@ function vless_reality() {
 
     port=10004
 
-    wget -O /usr/local/etc/sing-box/$conf_name.json https://raw.githubusercontent.com/clhlc/ProxyConfig/main/Sing-Box/VLESS-XTLS-uTLS-REALITY/config.json
+    wget -O /usr/local/etc/sing-box/$conf_name.json https://raw.githubusercontent.com/xxf185/sb-reality/refs/heads/main/config.json
 
     sed -i "s/PORT/$port/g; s/UUID/$uuid/g; s/SERVER_NAME/gateway\.icloud\.com/g; s/SERVER/gateway\.icloud\.com/g; s/PRIVATE_KEY/$private_key/g; s/SHORT_ID/$short_id/g" /usr/local/etc/sing-box/$conf_name.json
 
