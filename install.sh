@@ -18,17 +18,6 @@ yellow() {
     echo -e "\033[33m\033[01m$*\033[0m"
 }
 
-function init_vps() {
-    red 使用root用户执行
-
-    apt update
-    apt install -yqq qrencode net-tools
-
-    iptables -F
-
-    mkdir -p /etc/sb_ssl && openssl ecparam -genkey -name prime256v1 -out /etc/sb_ssl/private.key && openssl req -new -x509 -days 3650 -key /etc/sb_ssl/private.key -out /etc/sb_ssl/cert.pem -subj "/CN=bing.com"
-}
-
 function common_command() {
     server_ip=$(curl -s https://ipinfo.io/ip)
     cloud=$(curl -s ipinfo.io/$server_ip/org|awk '{print $2}')
