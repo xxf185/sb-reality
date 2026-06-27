@@ -178,7 +178,7 @@ function vless_reality() {
     gen_url_qr $server_link
 }
 
-function view_reality_config() {
+function view_vless_reality_config() {
     gen_url_qr $server_link 
 }
 
@@ -199,7 +199,7 @@ function menu() {
         1) install_sing_box ;;
         2) uninstall_sing_box ;;
         3) vless_reality ;;
-        4) view_reality_config ;;
+        4) view_vless_reality_config ;;
         5) restart_sing_box ;;
         99) test ;;
         *) exit 0 ;;
