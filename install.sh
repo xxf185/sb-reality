@@ -200,7 +200,7 @@ function menu() {
         case $menuInput in
         1) install_sing_box ;;
         2) uninstall_sing_box ;;
-        3) reality ;;
+        3) vless_reality ;;
         4) view_reality_config ;;
         5) restart_sing_box ;;
         99) test ;;
