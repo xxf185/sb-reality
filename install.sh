@@ -182,8 +182,6 @@ function view_reality_config() {
     gen_url_qr $server_link 
 }
 
-
-
 function menu() {
     while true; do
         echo -e ""
